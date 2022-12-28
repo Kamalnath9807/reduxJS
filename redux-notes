@@ -1,0 +1,36 @@
+step 1: create nextApp(npx create-next-app) 
+step 2: npm @reduxjs/toolkit, react-redux. 
+
+
+Why do we use provider in React?
+The <Provider> component makes the Redux store available to any nested components that need to access the Redux store.
+
+
+createSlice:
+A function that accepts an initial state, an object of reducer functions, and a "slice name", and automatically generates action creators and action types that correspond to the reducers and state.
+
+action.payload = data pass through dispatch function (it stores the additional information about what happened)
+
+
+
+What is useDispatch Redux Toolkit?
+In react-redux the useDispatch hook gives us access to our store's dispatch method. Dispatch is used to send actions into our redux store and is the only way we can affect the store from within a component. const dispatch = useAppDispatch(); dispatch({ type: "featureName/actionName, payload: {} })
+dispatch(): it uses like updating a Redux store's state.
+
+
+useSelector:  it is like a map() function to connect dispatch methods. It runs when the action is dispatched
+   ---- how to use ? when we import useSelector from redux, it gives us a state then we can access through state as useSelector.
+   Eg: we can use like some Loading State.
+
+
+
+
+
+REDUX CRUD PROJECT:
+usages: tailwind
+TAILWIND:
+step 1: npm install -D tailwindcss postcss autoprefixer
+step 2: https://tailwindcss.com/docs/guides/nextjs
+
+useReducer() - hook it allows you to get the data from form. It is similar to useState() in react
+
